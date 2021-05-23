@@ -1,0 +1,24 @@
+.wrap{
+    width: 400px;
+    padding: 30px;
+    border: 1px solid #000;
+}
+
+.wrap p{margin-bottom: 10px;}
+
+.wrap p label{display: inline-block;width: 80px;}
+
+.wrap p input{ width: 200px; padding: 5px; border: 1px solid #000;}
+
+.wrap p:last-child{ margin-top: 30px;}
+
+.wrap p button{padding: 10px 30px; background: #000; color: #fff;border: none; margin-right: 10px; }
+
+
+.wrap ul {}
+
+.wrap ul li {}
+
+.wrap ul li span {}
+
+.wrap h2 {}
