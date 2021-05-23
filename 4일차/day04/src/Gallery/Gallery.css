@@ -1,0 +1,14 @@
+*{ margin:0; padding:0 }
+li{ list-style:none ;}
+.Gallery { width:1300px; margin:30px auto; }
+.Gallery h2 { font-size: 30px; text-align: center; margin-bottom: 30px; color:tomato }
+.Gallery .list { display: flex; flex-direction: row; flex-wrap: wrap;}
+.Gallery .list article {display:flex;  margin:20px; background: #efefef; width:600px; height: 400px;}
+.Gallery .list article div.left {}
+.Gallery .list article div.left img { width:280px; height:400px}
+.Gallery .list article div.right  { width:280px; height:400px; margin-left:25px;  }
+.Gallery .list article div.right h3 { font-size: 20px; margin-bottom: 20px; padding-top: 40px;}
+.Gallery .list article div.right ul {margin-top: 40px;}
+.Gallery .list article div.right ul li { line-height: 45px; border-bottom: 1px solid #dcdcdc;}
+.Gallery .list article div.right button {margin-top: 50px; padding:15px 40px; background:#333; color:#fff; border:none; transition:0.3s; cursor: pointer;}
+.Gallery .list article div.right button:hover {background: tomato;}
