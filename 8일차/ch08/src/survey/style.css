@@ -1,0 +1,9 @@
+.wrap { width:400px; padding:30px; border:1px solid #333 }
+.wrap p { margin-bottom:10px  }
+.wrap p label { display: inline-block ; width:80px }
+.wrap p input { width:200px; border:1px solid #999; padding:5px }
+.wrap p:last-child { margin-top:30px }
+.wrap p button { padding:10px 30px; background:#333; margin-right:10px; color:#fff; border:none }
+.wrap ul li { font-size:16px; padding:5px 0; border-bottom:1px solid #dcdcdc  }
+.wrap ul li span { display:inline-block; width:90px; }
+.wrap h2 { font-size:30px; text-align: center;}
