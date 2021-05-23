@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //filter = 결과가 [] 배열이다.
+        const arr = [10, 20, 30, 40, 50]
+        //const result1 = arr.map(item => 출력)
+        //const result1 = arr.filter(item => 조건)
+        const result1 = arr.filter(item => item > 30)
+        console.log(result1)
+        const result2 = arr.filter(item => item === 10)  //리액트 === 같다의미
+        console.log(result2)
+        const result3 = arr.filter(item => item !== 20) //주로 데이터 삭제할때 쓰임
+        console.log(result3)
+
+        const data = [
+            { id: 1, name: "홍길동", age: 80 },
+            { id: 2, name: "강호동", age: 50 },
+            { id: 3, name: "김철수", age: 20 },
+            { id: 4, name: "이수근", age: 60 },
+        ]
+        const result4 = data.filter(item => item.id === 1)
+        console.log(result4)
+        const result5 = data.filter(item => item.id !== 1)
+        console.log(result5)
+
+        //필터와 맵은 원본은 건드리지않고 사본을 만든다!!! 중요함!
+    </script>
+</body>
+
+</html>

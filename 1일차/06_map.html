@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //MAP 새로운값을 만들어서 return 처리
+        //맵은 리턴처리가 되지만 foreach은 리턴이 없다
+
+        const arr1 = [10, 20, 30, 40, 50]
+        for (let item of arr1) {
+            console.log(item)
+        }
+        //반복문 그러나 리엑트에선 사용못함
+        const arr2 = [10, 20, 30, 40, 50]
+        for (let item1 in arr2) {
+            console.log(item1)
+        }
+        const arr3 = [10, 20, 30, 40, 50]
+
+        arr3.map((item, index) => {
+            return console.log(item, index)
+        })
+        arr3.map((item, index) => {
+            console.log(item, index)
+        })
+        arr3.map((item, index) => console.log(item, index))
+        //3가지 결과 동일
+
+        const data = [
+            { id: 1, name: "홍길동", age: 80 },
+            { id: 2, name: "강호동", age: 50 },
+            { id: 3, name: "김철수", age: 20 },
+            { id: 4, name: "이수근", age: 60 },
+        ]
+        data.map((item, index) => {
+            return (console.log(item.id, item.name)) //원하는 값 넣어 출력가능
+        })
+
+        data.map(item => {
+            console.log(item.id, item.name, item.age)
+        })
+        data.map(item => console.log(item.id, item.name, item.age))
+    </script>
+</body>
+
+</html>

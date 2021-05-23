@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const arr = ["고양이", "강아지", "소"]
+        const arr1 = arr.concat()
+        console.log(arr1)
+        const arr2 = [...arr]
+        console.log(arr2)
+        const arr3 = [...arr, "햄스터", "토끼"]
+        console.log(arr3)
+        //concat 도 많이 쓰고 스프레드 연산자도 많이 쓴다
+        //둘다 동일한듯
+
+        const data1 = { id: 1, name: "홍길동", age: 10 }
+        //콘켓은 데이터를 추가할때만 쓰고 스프레드 연산자는 추가도 하면서 변경도 가능하다.
+        const data2 = { ...data1, name: "유재석", age: 30 }
+        console.log(data2)
+    </script>
+</body>
+
+</html>

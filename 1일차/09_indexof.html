@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const arr1 = ["고구마", "감자", "사탕", "고기", "수박", "고사리"]
+        const txt = '고'
+        const result = arr1.filter(item => item.indexOf(txt) !== -1) //값이 존재 하지않을때는 -1
+        console.log(result)
+        const data = [
+            { id: 1, name: "홍길동", age: 80 },
+            { id: 2, name: "강호동", age: 50 },
+            { id: 3, name: "김철수", age: 20 },
+            { id: 4, name: "이수근", age: 60 },
+        ]
+        const txt = "이"
+        const result1 = data.filter(item => item.indexOf(txt) !== -1)
+        console.log(result1)
+
+    </script>
+</body>
+
+</html>

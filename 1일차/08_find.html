@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //find = 결과값이다.
+        const arr = [10, 20, 30, 40, 50]
+        //배열.find(변수 => 조건)
+        const re1 = arr.find(item => item > 10)
+        console.log(re1)
+
+        const re2 = arr.find(item => item === 10)
+        console.log(re2)
+
+        //필터와 차이점은 값을 하나만 찾아온다
+        //그것이 필터와 차이점 쓰는형식은 동일하나 필터는 전체를 출력 find는 그값 하나만 출력
+        const data = [
+            { id: 1, name: "홍길동", age: 80 },
+            { id: 2, name: "강호동", age: 50 },
+            { id: 3, name: "김철수", age: 20 },
+            { id: 4, name: "이수근", age: 60 },
+        ]
+
+        const data2 = data.find(item => item.id === 2)
+        console.log(data2)
+        //원하는 값 하나만 픽하기위해서
+    </script>
+</body>
+
+</html>

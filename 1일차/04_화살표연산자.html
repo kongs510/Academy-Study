@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        make()
+        function make() {
+            console.log("test")
+        }
+
+        make1 = () => {
+            return console.log("test2")
+        }
+        make1() //화살표 함수는 항상 선언먼저해주고 사용해야 일반함수랑 차이점
+        //() 매개변수 받는부분
+
+        make2 = () => {
+            console.log("test3")
+        }
+        make2() //리턴 생략 가능
+
+        make4 = () => console.log("test5")
+        make4()
+
+        make5 = (num1, num2) => {
+            console.log(num1 + num2)
+        }
+        make5(10, 20)
+
+    </script>
+</body>
+
+</html>
