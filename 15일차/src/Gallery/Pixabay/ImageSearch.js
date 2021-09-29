@@ -11,7 +11,7 @@ input{
     text-align:center;
     padding: 40px 0%;
 `
-const ImageSearch = ({onSearch}) => {
+const ImageSearch = ({ onSearch }) => {
     const [text, setText] = useState('');
     const onSubmit = (e) => {
         e.preventDefault()
@@ -19,7 +19,7 @@ const ImageSearch = ({onSearch}) => {
     }
     return (
         <ImageForm onSubmit={onSubmit}>
-            <input type="text" value={text} placeholder="검색할 이미지를 입력하세요" onChange={e=>setText(e.target.value)}/>
+            <input type="text" value={text} placeholder="검색할 이미지를 입력하세요" onChange={e => setText(e.target.value)} />
         </ImageForm>
     );
 };

@@ -5,10 +5,12 @@ import Test3 from './components/Test3';
 import Test4 from './components/Test4';
 import { Images } from './Gallery';
 
+
 const App = () => {
   return (
     <div>
-      <Images/>
+      <Test1 />
+      {/* <Images /> */}
     </div>
   );
 };
