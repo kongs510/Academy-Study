@@ -6,15 +6,15 @@ const Container = styled.div`
 width:300px;
 
 `
-    
+
 
 const Box1 = styled.section`
 padding: 20px;background: pink;transition:2s;margin-bottom:15px;
 cursor: pointer;
 `
-const Box2 = styled.section`` 
+const Box2 = styled.section``
 const Button = styled.button`
-padding:20px 40px;background:blue;` 
+padding:20px 40px;background:blue;`
 
 const Test4 = () => {
     return (
