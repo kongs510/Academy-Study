@@ -8,7 +8,7 @@ display: flex;justify-content:space-between;
 flex-wrap:wrap;
 `
 const Article = styled.article`
-width:350px;border:1px solid #dcdcdc;padding: 20px;
+width:350px;border:1px solid #dcdcdc;padding: 30px;
 margin-bottom:20px;   
 `
 
@@ -19,8 +19,8 @@ const Test1 = () => {
         getData()
     }, []);
 
-    const getData=()=>{
-        axios.get('https://jsonplaceholder.typicode.com/posts').then(res=>{
+    const getData = () => {
+        axios.get('https://jsonplaceholder.typicode.com/posts').then(res => {
             setPosts(res.data)
         })
     }
@@ -29,16 +29,16 @@ const Test1 = () => {
         <div>
             <Container>
                 {
-                    posts.map(post=><Article key={post.id}>
-                            {post.title}
-                            <p>
-                                {post.body}
-                            </p>
+                    posts.map(post => <Article key={post.id}>
+                        {post.title}
+                        <p>
+                            {post.body}
+                        </p>
                     </Article>
-                )
+                    )
                 }
-                </Container>
-                </div>
+            </Container>
+        </div>
     );
 };
 
